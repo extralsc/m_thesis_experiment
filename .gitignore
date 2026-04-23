@@ -1,0 +1,25 @@
+# Large model files (213MB total) — get these from Google ColabG
+models/*.pkl
+models/*.keras
+
+# Large dataset files (1.6GB total) — get these from Kaggle
+data/raw/
+data/processed/
+data/*.csv
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+.env
+
+# OS files
+.DS_Store
+
+data/*
+data/*/*
+
+CLAUDE*
+claude*
+.claude*
+.serena*

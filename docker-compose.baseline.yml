@@ -1,0 +1,66 @@
+# Baseline (UNCONSTRAINED) run — no CPU/RAM/network limits.
+# Run with:  bash run_experiments.sh --baseline 120
+#
+# Purpose: establishes the performance ceiling so constrained results
+# can be compared against it. Supervisor Fatiha requires baseline first.
+#
+# Results are written to results/ then moved to results/baseline/ by run_experiments.sh.
+
+services:
+  edge-gateway:
+    build:
+      context: ./edge
+    container_name: edge-gateway
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./models:/app/models:ro
+      - ./results:/app/results
+    networks:
+      - iot-net
+    # No deploy.resources.limits — unlimited CPU and RAM
+    # No entrypoint override — default CMD runs, no tc netem network delay
+    environment:
+      - MODEL_PATH=${MODEL_PATH:-/app/models/${MODEL_NAME:-Random_Forest}.pkl}
+      - LOG_PATH=/app/results/${MODEL_NAME:-Random_Forest}_metrics.csv
+      - PYTHONUNBUFFERED=1
+
+  iot-sensor:
+    build:
+      context: ./sensor
+    container_name: iot-sensor
+    depends_on:
+      - edge-gateway
+    networks:
+      - iot-net
+    volumes:
+      - ./data:/app/data:ro
+      - ./results:/app/results
+    environment:
+      - GATEWAY_URL=http://edge-gateway:5000/predict
+      - SEND_INTERVAL=1.0
+      - DATA_PATH=/app/data/processed/sensor.npy
+      - MODEL_NAME=${MODEL_NAME:-Random_Forest}
+      - PYTHONUNBUFFERED=1
+
+  attacker:
+    build:
+      context: ./attacker
+    container_name: attacker
+    depends_on:
+      - edge-gateway
+    networks:
+      - iot-net
+    volumes:
+      - ./data:/app/data:ro
+      - ./results:/app/results
+    environment:
+      - GATEWAY_URL=http://edge-gateway:5000/predict
+      - SEND_INTERVAL=0.5
+      - DATA_DIR=/app/data
+      - MODEL_NAME=${MODEL_NAME:-Random_Forest}
+      - PYTHONUNBUFFERED=1
+
+networks:
+  iot-net:
+    driver: bridge

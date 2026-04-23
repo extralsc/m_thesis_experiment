@@ -1,0 +1,11 @@
+Test the experiment environment by:
+Setup docker with python code,
+
+Docker for ai, for iot gatway, for attaacking machine
+
+measure ram, latency, accyrency etc.
+
+Focus lastely on NIS not in the experiemnt, 
+
+
+mention all ai etc types you are using, if we can find paper from before done similar and write like x did this and this HOWEVER they did not do this and this etc.

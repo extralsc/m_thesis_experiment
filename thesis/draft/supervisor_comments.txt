@@ -1,0 +1,25 @@
+https://arxiv.org/pdf/1910.03026
+
+https://www.sciencedirect.com/science/article/pii/S2542660524003391
+
+https://www.icck.org/article/abs/tmi.2025.225921
+
+https://www.sciencedirect.com/science/article/pii/S1569190X25001613?utm_source=chatgpt.com
+
+For the simulation, you need to setup the environment for:  (CPU limit, memory limit, network delay, etc.) 
+
+All these are backed by literature (above and more). Also good to add the papers. Above to your literature. Mimic how they present results and simulations scenarios.
+
+Read on how to setup your docker as a constrained env.
+
+Before that you need to run the baseline models (normal env) and record:
+Train your model normally on your IoT attack dataset
+Record:
+Accuracy
+F1-score
+Latency
+Cpu usage
+Memory
+Model size
+Best
+Fatiha

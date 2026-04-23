@@ -1,0 +1,14 @@
+Repetition alot  
+
+Section or chapter 2 IDS, is very weak. 
+
+Unclear how we are going to use opensource data, IoT and the sensor data ? How are they connected? 
+ 
+Are we going to focus on the IoT OR the sensor itself? And WITH what data? How are we going to use IoT dataset and Sensor dataset? 
+ 
+
+Unclear how the research questions are related: 
+We are going to use STRIDE to map vulnerabilities, then use ML to detect them and then see if NIS2 has anything we can use to mitigate them. 
+ 
+
+How are we going to setup the experiment, how do we know what constrains we should put on the proxmox for example?  

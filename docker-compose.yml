@@ -1,0 +1,87 @@
+# Model names (set MODEL_NAME env var when running):
+#   Random_Forest | Decision_Tree | Logistic_Regression | Naive_Bayes | ANN | CNN
+#
+# Run one model:
+#   MODEL_NAME=Random_Forest docker-compose up --build
+#
+# Run all models automatically:
+#   bash run_experiments.sh
+
+services:
+  # -------------------------------------------------------
+  # 1. Edge IoT Gateway  (Raspberry Pi 4 constraints)
+  #    - 1 CPU core, 512 MB RAM  (Pi 4 Model B lower bound)
+  #    - 50ms ± 10ms network delay via tc netem (typical Pi 4 LAN RTT)
+  #    - Runs ML IDS, classifies Edge-IIoTset traffic (46 features, 15 classes)
+  # -------------------------------------------------------
+  edge-gateway:
+    build:
+      context: ./edge
+    container_name: edge-gateway
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./models:/app/models:ro
+      - ./results:/app/results
+    networks:
+      - iot-net
+    cap_add:
+      - NET_ADMIN
+    entrypoint: ["/bin/bash", "/app/entrypoint.sh"]
+    deploy:
+      resources:
+        limits:
+          cpus: "1.0"
+          memory: 512M
+        reservations:
+          memory: 128M
+    environment:
+      - MODEL_PATH=${MODEL_PATH:-/app/models/${MODEL_NAME:-Random_Forest}.pkl}
+      - LOG_PATH=/app/results/${MODEL_NAME:-Random_Forest}_metrics.csv
+      - PYTHONUNBUFFERED=1
+
+  # -------------------------------------------------------
+  # 2. IoT Sensor  (replays normal traffic from dataset)
+  # -------------------------------------------------------
+  iot-sensor:
+    build:
+      context: ./sensor
+    container_name: iot-sensor
+    depends_on:
+      - edge-gateway
+    networks:
+      - iot-net
+    volumes:
+      - ./data:/app/data:ro
+      - ./results:/app/results
+    environment:
+      - GATEWAY_URL=http://edge-gateway:5000/predict
+      - SEND_INTERVAL=1.0
+      - DATA_PATH=/app/data/processed/sensor.npy
+      - MODEL_NAME=${MODEL_NAME:-Random_Forest}
+      - PYTHONUNBUFFERED=1
+
+  # -------------------------------------------------------
+  # 3. Attacker  (replays real attack traffic from dataset)
+  # -------------------------------------------------------
+  attacker:
+    build:
+      context: ./attacker
+    container_name: attacker
+    depends_on:
+      - edge-gateway
+    networks:
+      - iot-net
+    volumes:
+      - ./data:/app/data:ro
+      - ./results:/app/results
+    environment:
+      - GATEWAY_URL=http://edge-gateway:5000/predict
+      - SEND_INTERVAL=0.5
+      - DATA_DIR=/app/data
+      - MODEL_NAME=${MODEL_NAME:-Random_Forest}
+      - PYTHONUNBUFFERED=1
+
+networks:
+  iot-net:
+    driver: bridge

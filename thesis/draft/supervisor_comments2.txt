@@ -1,0 +1,15 @@
+Hello,
+Please send me an update on the following. 
+
+1- GitHub/Collab of your codes and results
+
+2- Updated overleaf link with your reports (for next week)
+
+3- Weekly plan till submission.
+
+ Also, for the testing, Please identify 2-3 good papers (published in reputed journals or conferences, ieee) and see what kind of figures of merit they use and what kinds of graphs they use.  Some statistical analysis of the results (like how reliable are the results) will be nice. 
+ Maybe we can have a meeting on Friday morning? 
+
+Best
+
+fatiha 

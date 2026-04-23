@@ -1,0 +1,199 @@
+timestamp,attack_type,stride_category,status,predicted_label,detected,latency_ms
+2026-04-23T06:53:21.568955,Backdoor,Elevation of Privilege,ok,DDoS_ICMP,yes,0.09
+2026-04-23T06:53:22.184276,DDoS_HTTP,Denial of Service,ok,Ransomware,yes,0.18
+2026-04-23T06:53:22.809816,MITM,Tampering,ok,DDoS_TCP,yes,0.12
+2026-04-23T06:53:23.423867,Port_Scanning,Information Disclosure,ok,Ransomware,yes,0.27
+2026-04-23T06:53:24.035620,SQL_injection,Tampering,ok,DDoS_TCP,yes,0.13
+2026-04-23T06:53:24.674869,XSS,Tampering,ok,Fingerprinting,yes,0.31
+2026-04-23T06:53:25.284293,Backdoor,Elevation of Privilege,ok,DDoS_ICMP,yes,0.14
+2026-04-23T06:53:25.912811,DDoS_HTTP,Denial of Service,ok,MITM,yes,0.22
+2026-04-23T06:53:26.548744,MITM,Tampering,ok,Uploading,yes,0.50
+2026-04-23T06:53:27.185774,Port_Scanning,Information Disclosure,ok,MITM,yes,0.20
+2026-04-23T06:53:27.797340,SQL_injection,Tampering,ok,Normal,no,0.12
+2026-04-23T06:53:28.403031,XSS,Tampering,ok,Uploading,yes,0.11
+2026-04-23T06:53:29.029110,Backdoor,Elevation of Privilege,ok,DDoS_TCP,yes,0.44
+2026-04-23T06:53:29.654493,DDoS_HTTP,Denial of Service,ok,Vulnerability_scanner,yes,0.22
+2026-04-23T06:53:30.272640,MITM,Tampering,ok,Password,yes,0.23
+2026-04-23T06:53:30.893984,Port_Scanning,Information Disclosure,ok,Port_Scanning,yes,0.18
+2026-04-23T06:53:31.521850,SQL_injection,Tampering,ok,Uploading,yes,0.13
+2026-04-23T06:53:32.152944,XSS,Tampering,ok,DDoS_TCP,yes,0.25
+2026-04-23T06:53:32.775213,Backdoor,Elevation of Privilege,ok,Fingerprinting,yes,0.12
+2026-04-23T06:53:33.402629,DDoS_HTTP,Denial of Service,ok,DDoS_UDP,yes,0.10
+2026-04-23T06:53:34.009602,MITM,Tampering,ok,Ransomware,yes,0.58
+2026-04-23T06:53:34.652250,Port_Scanning,Information Disclosure,ok,Password,yes,0.32
+2026-04-23T06:53:35.272281,SQL_injection,Tampering,ok,Normal,no,0.16
+2026-04-23T06:53:35.894784,XSS,Tampering,ok,Password,yes,0.20
+2026-04-23T06:53:36.530632,Backdoor,Elevation of Privilege,ok,XSS,yes,0.37
+2026-04-23T06:53:37.157461,DDoS_HTTP,Denial of Service,ok,DDoS_HTTP,yes,0.28
+2026-04-23T06:53:37.787680,MITM,Tampering,ok,DDoS_HTTP,yes,0.29
+2026-04-23T06:53:38.401345,Port_Scanning,Information Disclosure,ok,DDoS_TCP,yes,0.15
+2026-04-23T06:53:39.025051,SQL_injection,Tampering,ok,MITM,yes,0.22
+2026-04-23T06:53:39.651785,XSS,Tampering,ok,Ransomware,yes,0.31
+2026-04-23T06:53:40.438390,Backdoor,Elevation of Privilege,ok,Uploading,yes,0.19
+2026-04-23T06:53:41.064069,DDoS_HTTP,Denial of Service,ok,DDoS_ICMP,yes,0.34
+2026-04-23T06:53:41.672088,MITM,Tampering,ok,DDoS_ICMP,yes,0.35
+2026-04-23T06:53:42.313647,Port_Scanning,Information Disclosure,ok,Vulnerability_scanner,yes,0.12
+2026-04-23T06:53:42.943143,SQL_injection,Tampering,ok,Port_Scanning,yes,0.22
+2026-04-23T06:53:43.550954,XSS,Tampering,ok,Password,yes,0.12
+2026-04-23T06:53:44.182789,Backdoor,Elevation of Privilege,ok,Vulnerability_scanner,yes,0.34
+2026-04-23T06:53:44.807567,DDoS_HTTP,Denial of Service,ok,DDoS_ICMP,yes,0.48
+2026-04-23T06:53:45.429358,MITM,Tampering,ok,DDoS_HTTP,yes,0.30
+2026-04-23T06:53:46.044677,Port_Scanning,Information Disclosure,ok,Vulnerability_scanner,yes,0.17
+2026-04-23T06:53:46.675948,SQL_injection,Tampering,ok,Normal,no,0.21
+2026-04-23T06:53:47.314815,XSS,Tampering,ok,Uploading,yes,0.33
+2026-04-23T06:53:47.946960,Backdoor,Elevation of Privilege,ok,DDoS_TCP,yes,0.18
+2026-04-23T06:53:48.574109,DDoS_HTTP,Denial of Service,ok,Port_Scanning,yes,0.12
+2026-04-23T06:53:49.208755,MITM,Tampering,ok,DDoS_ICMP,yes,0.44
+2026-04-23T06:53:49.836470,Port_Scanning,Information Disclosure,ok,Port_Scanning,yes,0.23
+2026-04-23T06:53:50.464285,SQL_injection,Tampering,ok,SQL_injection,yes,0.19
+2026-04-23T06:53:51.083488,XSS,Tampering,ok,SQL_injection,yes,0.11
+2026-04-23T06:53:51.698081,Backdoor,Elevation of Privilege,ok,XSS,yes,0.15
+2026-04-23T06:53:52.310180,DDoS_HTTP,Denial of Service,ok,XSS,yes,0.23
+2026-04-23T06:53:52.932949,MITM,Tampering,ok,Backdoor,yes,0.30
+2026-04-23T06:53:53.563853,Port_Scanning,Information Disclosure,ok,Port_Scanning,yes,0.18
+2026-04-23T06:53:54.197197,SQL_injection,Tampering,ok,Port_Scanning,yes,0.28
+2026-04-23T06:53:54.825952,XSS,Tampering,ok,Uploading,yes,0.33
+2026-04-23T06:53:55.447042,Backdoor,Elevation of Privilege,ok,Normal,no,0.12
+2026-04-23T06:53:56.067216,DDoS_HTTP,Denial of Service,ok,Ransomware,yes,0.21
+2026-04-23T06:53:56.695855,MITM,Tampering,ok,DDoS_ICMP,yes,0.34
+2026-04-23T06:53:57.326640,Port_Scanning,Information Disclosure,ok,Normal,no,0.10
+2026-04-23T06:53:57.944648,SQL_injection,Tampering,ok,Uploading,yes,0.24
+2026-04-23T06:53:58.563074,XSS,Tampering,ok,DDoS_TCP,yes,0.12
+2026-04-23T06:53:59.190840,Backdoor,Elevation of Privilege,ok,Fingerprinting,yes,0.32
+2026-04-23T06:53:59.815467,DDoS_HTTP,Denial of Service,ok,Uploading,yes,0.33
+2026-04-23T06:54:00.445486,MITM,Tampering,ok,DDoS_UDP,yes,0.22
+2026-04-23T06:54:01.076547,Port_Scanning,Information Disclosure,ok,XSS,yes,0.12
+2026-04-23T06:54:01.684238,SQL_injection,Tampering,ok,MITM,yes,0.13
+2026-04-23T06:54:02.288143,XSS,Tampering,ok,MITM,yes,0.12
+2026-04-23T06:54:02.900378,Backdoor,Elevation of Privilege,ok,DDoS_UDP,yes,0.11
+2026-04-23T06:54:03.513777,DDoS_HTTP,Denial of Service,ok,Port_Scanning,yes,0.33
+2026-04-23T06:54:04.132198,MITM,Tampering,ok,Fingerprinting,yes,0.07
+2026-04-23T06:54:04.756980,Port_Scanning,Information Disclosure,ok,DDoS_TCP,yes,0.29
+2026-04-23T06:54:05.363726,SQL_injection,Tampering,ok,Uploading,yes,0.17
+2026-04-23T06:54:05.989459,XSS,Tampering,ok,Fingerprinting,yes,0.20
+2026-04-23T06:54:06.614239,Backdoor,Elevation of Privilege,ok,Normal,no,0.34
+2026-04-23T06:54:07.239195,DDoS_HTTP,Denial of Service,ok,DDoS_UDP,yes,0.15
+2026-04-23T06:54:07.867598,MITM,Tampering,ok,DDoS_HTTP,yes,0.11
+2026-04-23T06:54:08.484982,Port_Scanning,Information Disclosure,ok,DDoS_UDP,yes,0.08
+2026-04-23T06:54:09.116569,SQL_injection,Tampering,ok,Vulnerability_scanner,yes,0.13
+2026-04-23T06:54:09.727390,XSS,Tampering,ok,Backdoor,yes,0.14
+2026-04-23T06:54:10.491795,Backdoor,Elevation of Privilege,ok,XSS,yes,0.11
+2026-04-23T06:54:11.105063,DDoS_HTTP,Denial of Service,ok,DDoS_TCP,yes,0.13
+2026-04-23T06:54:11.728774,MITM,Tampering,ok,DDoS_HTTP,yes,0.13
+2026-04-23T06:54:12.339482,Port_Scanning,Information Disclosure,ok,Normal,no,0.14
+2026-04-23T06:54:12.943809,SQL_injection,Tampering,ok,DDoS_ICMP,yes,0.11
+2026-04-23T06:54:13.570122,XSS,Tampering,ok,SQL_injection,yes,0.12
+2026-04-23T06:54:14.193965,Backdoor,Elevation of Privilege,ok,Fingerprinting,yes,0.18
+2026-04-23T06:54:14.817514,DDoS_HTTP,Denial of Service,ok,DDoS_ICMP,yes,0.09
+2026-04-23T06:54:15.436399,MITM,Tampering,ok,Password,yes,0.16
+2026-04-23T06:54:16.064153,Port_Scanning,Information Disclosure,ok,XSS,yes,0.35
+2026-04-23T06:54:16.696170,SQL_injection,Tampering,ok,Uploading,yes,0.11
+2026-04-23T06:54:17.308106,XSS,Tampering,ok,Backdoor,yes,0.12
+2026-04-23T06:54:17.935932,Backdoor,Elevation of Privilege,ok,Password,yes,0.15
+2026-04-23T06:54:18.559688,DDoS_HTTP,Denial of Service,ok,Password,yes,0.11
+2026-04-23T06:54:19.181359,MITM,Tampering,ok,DDoS_ICMP,yes,0.07
+2026-04-23T06:54:19.801851,Port_Scanning,Information Disclosure,ok,Fingerprinting,yes,0.14
+2026-04-23T06:54:20.424095,SQL_injection,Tampering,ok,DDoS_ICMP,yes,0.10
+2026-04-23T06:54:21.024103,XSS,Tampering,ok,Ransomware,yes,0.12
+2026-04-23T06:54:21.646368,Backdoor,Elevation of Privilege,ok,Port_Scanning,yes,0.12
+2026-04-23T06:54:22.269248,DDoS_HTTP,Denial of Service,ok,DDoS_UDP,yes,0.21
+2026-04-23T06:54:22.889029,MITM,Tampering,ok,DDoS_TCP,yes,0.11
+2026-04-23T06:54:23.506882,Port_Scanning,Information Disclosure,ok,Uploading,yes,0.13
+2026-04-23T06:54:24.111844,SQL_injection,Tampering,ok,Port_Scanning,yes,0.19
+2026-04-23T06:54:24.737125,XSS,Tampering,ok,XSS,yes,0.11
+2026-04-23T06:54:25.349491,Backdoor,Elevation of Privilege,ok,Uploading,yes,0.14
+2026-04-23T06:54:25.974302,DDoS_HTTP,Denial of Service,ok,Normal,no,0.11
+2026-04-23T06:54:26.598722,MITM,Tampering,ok,Ransomware,yes,0.11
+2026-04-23T06:54:27.230444,Port_Scanning,Information Disclosure,ok,DDoS_HTTP,yes,0.11
+2026-04-23T06:54:27.851677,SQL_injection,Tampering,ok,Uploading,yes,0.13
+2026-04-23T06:54:28.455945,XSS,Tampering,ok,Vulnerability_scanner,yes,0.14
+2026-04-23T06:54:29.086230,Backdoor,Elevation of Privilege,ok,DDoS_ICMP,yes,0.14
+2026-04-23T06:54:29.695775,DDoS_HTTP,Denial of Service,ok,Normal,no,0.08
+2026-04-23T06:54:30.299944,MITM,Tampering,ok,DDoS_TCP,yes,0.08
+2026-04-23T06:54:30.904977,Port_Scanning,Information Disclosure,ok,SQL_injection,yes,0.20
+2026-04-23T06:54:31.517610,SQL_injection,Tampering,ok,Vulnerability_scanner,yes,0.13
+2026-04-23T06:54:32.148760,XSS,Tampering,ok,MITM,yes,0.14
+2026-04-23T06:54:32.777121,Backdoor,Elevation of Privilege,ok,DDoS_HTTP,yes,0.13
+2026-04-23T06:54:33.388900,DDoS_HTTP,Denial of Service,ok,Fingerprinting,yes,0.13
+2026-04-23T06:54:34.016467,MITM,Tampering,ok,SQL_injection,yes,0.33
+2026-04-23T06:54:34.643683,Port_Scanning,Information Disclosure,ok,SQL_injection,yes,0.12
+2026-04-23T06:54:35.268125,SQL_injection,Tampering,ok,Normal,no,0.09
+2026-04-23T06:54:35.882115,XSS,Tampering,ok,Port_Scanning,yes,0.13
+2026-04-23T06:54:36.491877,Backdoor,Elevation of Privilege,ok,Backdoor,yes,0.15
+2026-04-23T06:54:37.105716,DDoS_HTTP,Denial of Service,ok,Fingerprinting,yes,0.13
+2026-04-23T06:54:37.721565,MITM,Tampering,ok,DDoS_UDP,yes,0.17
+2026-04-23T06:54:38.338030,Port_Scanning,Information Disclosure,ok,Normal,no,0.13
+2026-04-23T06:54:38.959966,SQL_injection,Tampering,ok,Uploading,yes,0.21
+2026-04-23T06:54:39.575161,XSS,Tampering,ok,Vulnerability_scanner,yes,0.13
+2026-04-23T06:54:40.316674,Backdoor,Elevation of Privilege,ok,DDoS_TCP,yes,0.13
+2026-04-23T06:54:40.942370,DDoS_HTTP,Denial of Service,ok,Backdoor,yes,0.29
+2026-04-23T06:54:41.579791,MITM,Tampering,ok,SQL_injection,yes,0.10
+2026-04-23T06:54:42.181800,Port_Scanning,Information Disclosure,ok,DDoS_UDP,yes,0.13
+2026-04-23T06:54:42.799349,SQL_injection,Tampering,ok,DDoS_TCP,yes,0.12
+2026-04-23T06:54:43.401135,XSS,Tampering,ok,MITM,yes,0.14
+2026-04-23T06:54:44.016651,Backdoor,Elevation of Privilege,ok,XSS,yes,0.09
+2026-04-23T06:54:44.635346,DDoS_HTTP,Denial of Service,ok,Vulnerability_scanner,yes,0.19
+2026-04-23T06:54:45.253177,MITM,Tampering,ok,XSS,yes,0.13
+2026-04-23T06:54:45.873904,Port_Scanning,Information Disclosure,ok,Vulnerability_scanner,yes,0.14
+2026-04-23T06:54:46.493566,SQL_injection,Tampering,ok,DDoS_ICMP,yes,0.47
+2026-04-23T06:54:47.129163,XSS,Tampering,ok,Port_Scanning,yes,0.14
+2026-04-23T06:54:47.747415,Backdoor,Elevation of Privilege,ok,DDoS_ICMP,yes,0.19
+2026-04-23T06:54:48.361412,DDoS_HTTP,Denial of Service,ok,DDoS_HTTP,yes,0.19
+2026-04-23T06:54:48.975027,MITM,Tampering,ok,DDoS_TCP,yes,0.23
+2026-04-23T06:54:49.595398,Port_Scanning,Information Disclosure,ok,Backdoor,yes,0.10
+2026-04-23T06:54:50.205306,SQL_injection,Tampering,ok,Vulnerability_scanner,yes,0.13
+2026-04-23T06:54:50.826986,XSS,Tampering,ok,DDoS_UDP,yes,0.13
+2026-04-23T06:54:51.453139,Backdoor,Elevation of Privilege,ok,DDoS_TCP,yes,0.13
+2026-04-23T06:54:52.057837,DDoS_HTTP,Denial of Service,ok,DDoS_HTTP,yes,0.12
+2026-04-23T06:54:52.675612,MITM,Tampering,ok,XSS,yes,0.12
+2026-04-23T06:54:53.300262,Port_Scanning,Information Disclosure,ok,Ransomware,yes,0.16
+2026-04-23T06:54:53.923016,SQL_injection,Tampering,ok,Normal,no,0.13
+2026-04-23T06:54:54.528550,XSS,Tampering,ok,DDoS_TCP,yes,0.12
+2026-04-23T06:54:55.161465,Backdoor,Elevation of Privilege,ok,Normal,no,0.34
+2026-04-23T06:54:55.779868,DDoS_HTTP,Denial of Service,ok,Normal,no,0.15
+2026-04-23T06:54:56.390772,MITM,Tampering,ok,MITM,yes,0.17
+2026-04-23T06:54:57.011828,Port_Scanning,Information Disclosure,ok,DDoS_HTTP,yes,0.19
+2026-04-23T06:54:57.639252,SQL_injection,Tampering,ok,Ransomware,yes,0.14
+2026-04-23T06:54:58.256317,XSS,Tampering,ok,Backdoor,yes,0.12
+2026-04-23T06:54:58.877241,Backdoor,Elevation of Privilege,ok,Normal,no,0.10
+2026-04-23T06:54:59.498207,DDoS_HTTP,Denial of Service,ok,Normal,no,0.30
+2026-04-23T06:55:00.103940,MITM,Tampering,ok,Uploading,yes,0.10
+2026-04-23T06:55:00.720895,Port_Scanning,Information Disclosure,ok,Backdoor,yes,0.07
+2026-04-23T06:55:01.366092,SQL_injection,Tampering,ok,Vulnerability_scanner,yes,0.33
+2026-04-23T06:55:01.993907,XSS,Tampering,ok,Vulnerability_scanner,yes,0.16
+2026-04-23T06:55:02.627474,Backdoor,Elevation of Privilege,ok,Backdoor,yes,0.17
+2026-04-23T06:55:03.246201,DDoS_HTTP,Denial of Service,ok,Normal,no,0.16
+2026-04-23T06:55:03.851442,MITM,Tampering,ok,Uploading,yes,0.29
+2026-04-23T06:55:04.475016,Port_Scanning,Information Disclosure,ok,Fingerprinting,yes,0.16
+2026-04-23T06:55:05.084981,SQL_injection,Tampering,ok,DDoS_ICMP,yes,0.12
+2026-04-23T06:55:05.699639,XSS,Tampering,ok,DDoS_HTTP,yes,0.33
+2026-04-23T06:55:06.328483,Backdoor,Elevation of Privilege,ok,Vulnerability_scanner,yes,0.13
+2026-04-23T06:55:06.962770,DDoS_HTTP,Denial of Service,ok,XSS,yes,0.31
+2026-04-23T06:55:07.590318,MITM,Tampering,ok,Backdoor,yes,0.34
+2026-04-23T06:55:08.212814,Port_Scanning,Information Disclosure,ok,MITM,yes,0.20
+2026-04-23T06:55:08.822170,SQL_injection,Tampering,ok,Password,yes,0.21
+2026-04-23T06:55:09.432072,XSS,Tampering,ok,Uploading,yes,0.17
+2026-04-23T06:55:10.055617,Backdoor,Elevation of Privilege,ok,DDoS_ICMP,yes,0.30
+2026-04-23T06:55:10.819181,DDoS_HTTP,Denial of Service,ok,Backdoor,yes,0.17
+2026-04-23T06:55:11.429394,MITM,Tampering,ok,MITM,yes,0.32
+2026-04-23T06:55:12.052572,Port_Scanning,Information Disclosure,ok,Port_Scanning,yes,0.12
+2026-04-23T06:55:12.689514,SQL_injection,Tampering,ok,DDoS_HTTP,yes,0.13
+2026-04-23T06:55:13.306066,XSS,Tampering,ok,Uploading,yes,0.10
+2026-04-23T06:55:13.927038,Backdoor,Elevation of Privilege,ok,Ransomware,yes,0.29
+2026-04-23T06:55:14.547936,DDoS_HTTP,Denial of Service,ok,DDoS_ICMP,yes,0.38
+2026-04-23T06:55:15.173961,MITM,Tampering,ok,Uploading,yes,0.49
+2026-04-23T06:55:15.802151,Port_Scanning,Information Disclosure,ok,Normal,no,0.50
+2026-04-23T06:55:16.417929,SQL_injection,Tampering,ok,XSS,yes,0.16
+2026-04-23T06:55:17.047461,XSS,Tampering,ok,Password,yes,0.33
+2026-04-23T06:55:17.658388,Backdoor,Elevation of Privilege,ok,DDoS_HTTP,yes,0.21
+2026-04-23T06:55:18.272178,DDoS_HTTP,Denial of Service,ok,Fingerprinting,yes,0.10
+2026-04-23T06:55:18.888176,MITM,Tampering,ok,Backdoor,yes,0.15
+2026-04-23T06:55:19.510461,Port_Scanning,Information Disclosure,ok,Backdoor,yes,0.33
+2026-04-23T06:55:20.129974,SQL_injection,Tampering,ok,Fingerprinting,yes,0.12
+2026-04-23T06:55:20.746284,XSS,Tampering,ok,DDoS_UDP,yes,0.30
+2026-04-23T06:55:21.361261,Backdoor,Elevation of Privilege,ok,Port_Scanning,yes,0.15
+2026-04-23T06:55:21.974749,DDoS_HTTP,Denial of Service,ok,Ransomware,yes,0.45
+2026-04-23T06:55:22.594618,MITM,Tampering,ok,XSS,yes,0.09
+2026-04-23T06:55:23.226246,Port_Scanning,Information Disclosure,ok,XSS,yes,0.14
+2026-04-23T06:55:23.857770,SQL_injection,Tampering,ok,MITM,yes,0.42
+2026-04-23T06:55:24.477554,XSS,Tampering,ok,DDoS_HTTP,yes,0.21
